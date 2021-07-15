@@ -1,0 +1,10 @@
+.mainSectionWrapper {
+    background-image: url("../assets/img/cardsBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+}

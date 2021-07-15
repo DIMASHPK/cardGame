@@ -1,0 +1,75 @@
+.gameContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--dark-opacity-bg);
+    box-shadow: var(--box-shadow-main);
+    min-height: 100vh;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.gameContainer_gameInfo_titleContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.gameContainer_gameInfo > p {
+    margin: 0 0 30px;
+}
+
+.gameContainer_gameInfo_userInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameContainer_gameInfo_userInfo span {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.gameContainer_gameInfo_userInfo {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.gameContainer_actionsWrapper {
+    margin-top: 40px ;
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer_cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .gameContainer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gameContainer{
+        padding: 15px;
+    }
+
+    .gameContainer_gameInfo_titleContainer > h1 {
+        font-size: 20px;
+    }
+
+    .gameContainer_gameInfo > p {
+        font-size: 12px;
+    }
+
+    .gameContainer_gameInfo_userInfo span {
+        font-size: 12px;
+    }
+
+    .gameContainer_actionsWrapper {
+        margin-top: 25px;
+    }
+}

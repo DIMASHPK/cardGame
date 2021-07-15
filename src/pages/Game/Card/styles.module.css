@@ -1,0 +1,118 @@
+.cardContainer{
+    width: calc(100% / 8 - 15px);
+    height: 180px;
+    box-shadow: var(--box-shadow-main);
+    margin-bottom: 15px;
+    border: 1px solid var(--black-color);
+    transition: transform .3s, border-color .3s ;
+    cursor: pointer;
+    will-change: transform;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    border-radius: 6px;
+}
+
+.cardContainer:hover {
+    transform: scale(1.05);
+}
+
+.cardContainer.opened {
+    transform: scale(1.05) rotateY(180deg);
+}
+
+.cardContainer.havePair {
+    border-color: var(--yellow-color);
+}
+
+.cardContainer_back_havePair {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.cardContainer.havePair .cardContainer_back_havePair{
+    background: var(--yellow-color-with-opacity);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.cardContainer.havePair .cardContainer_back_havePair > span {
+    color: var(--yellow-color);
+    font-size: 16px;
+    line-height: 140%;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translate(-50%, -50%) rotateZ(40deg);
+}
+
+.cardContainer_frontWrapper, .cardContainer_backWrapper {
+    position: absolute;
+    padding: 3px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: var(--white-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.cardContainer_backWrapper {
+    transform: rotateY(180deg);
+}
+
+.cardContainer_front, .cardContainer_back {
+    height: 100%;
+    width: 100%;
+}
+
+.cardContainer_front{
+    background: url("../../../assets/img/cards.png") no-repeat calc(135px * -2) calc(180px * -4);
+    background-size: calc(135px * 13) calc(180px * 5);
+}
+
+.cardContainer_back{
+    background: url("../../../assets/img/cards.png") no-repeat calc(135px * 0) calc(180px * 0);
+    background-size: calc(135px * 13) calc(180px * 5);
+
+}
+
+@media (max-width: 1280px) {
+    .cardContainer {
+        height: 120px;
+        width: calc(100% / 8 - 12px);
+    }
+}
+
+@media (max-width: 1065px) {
+    .cardContainer {
+        height: 120px;
+        width: calc(100% / 6 - 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        height: 110px;
+        width: calc(100% / 6 - 6px);
+    }
+}
+
+@media (max-width: 425px) {
+    .cardContainer {
+        height: 70px;
+        width: calc(100% / 6 - 6px);
+    }
+
+    .cardContainer.havePair .cardContainer_back_havePair > span {
+        font-size: 8px;
+        color: var(--black-color);
+        -webkit-text-stroke: unset;
+    }
+}

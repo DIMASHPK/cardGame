@@ -1,0 +1,54 @@
+:root {
+    --white-color: #fff;
+    --black-color: #212121;
+    --yellow-color: #fab700;
+    --dark-opacity-bg: rgba(0,0,0,0.6);
+    --box-shadow-main: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --yellow-color-with-opacity: rgba(250, 183, 0, 0.4) ;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica", serif;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1;
+    margin: 0;
+    color: var(--white-color);
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1;
+    color: var(--white-color);
+    padding: 0;
+    margin: 0;
+}
+
+p, span {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+    color: var(--white-color);
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, span {
+        font-size: 12px;
+    }
+}

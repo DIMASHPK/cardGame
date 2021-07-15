@@ -1,0 +1,40 @@
+.inputContainer {
+    position: relative;
+    display: block;
+}
+
+.input{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--white-color);
+    padding: 5px 0;
+    color: var(--white-color);
+    background: none;
+}
+
+.inputPlaceholder {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 5px 0;
+    white-space: nowrap;
+    transform: translate(0, -50%);
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--white-color);
+    cursor: text;
+}
+
+.input:not(:placeholder-shown), .input:focus {
+    border-color: var(--yellow-color);
+    outline: none;
+}
+
+.input:not(:placeholder-shown) + .inputPlaceholder, .input:focus + .inputPlaceholder {
+    transform: translate(0, -110%) scale(.8);
+    color: var(--yellow-color);
+}

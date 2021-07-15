@@ -1,0 +1,19 @@
+.button{
+    padding: 5px 15px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    background: none;
+    cursor: pointer;
+    transition: color .3s, border-color .3s, opacity .3s;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
