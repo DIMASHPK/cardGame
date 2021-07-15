@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/card_game/static/css/main.8189e5d2.chunk.css",
-    "main.js": "/card_game/static/js/main.6c78c608.chunk.js",
-    "main.js.map": "/card_game/static/js/main.6c78c608.chunk.js.map",
-    "runtime-main.js": "/card_game/static/js/runtime-main.90b16801.js",
-    "runtime-main.js.map": "/card_game/static/js/runtime-main.90b16801.js.map",
-    "static/js/2.87b31938.chunk.js": "/card_game/static/js/2.87b31938.chunk.js",
-    "static/js/2.87b31938.chunk.js.map": "/card_game/static/js/2.87b31938.chunk.js.map",
-    "index.html": "/card_game/index.html",
-    "static/css/main.8189e5d2.chunk.css.map": "/card_game/static/css/main.8189e5d2.chunk.css.map",
-    "static/js/2.87b31938.chunk.js.LICENSE.txt": "/card_game/static/js/2.87b31938.chunk.js.LICENSE.txt",
-    "static/media/styles.module.css": "/card_game/static/media/cardsBackground.1ee1be8d.jpg"
+    "main.css": "/cardGame/static/css/main.18b1357c.chunk.css",
+    "main.js": "/cardGame/static/js/main.6c78c608.chunk.js",
+    "main.js.map": "/cardGame/static/js/main.6c78c608.chunk.js.map",
+    "runtime-main.js": "/cardGame/static/js/runtime-main.660849cf.js",
+    "runtime-main.js.map": "/cardGame/static/js/runtime-main.660849cf.js.map",
+    "static/js/2.87b31938.chunk.js": "/cardGame/static/js/2.87b31938.chunk.js",
+    "static/js/2.87b31938.chunk.js.map": "/cardGame/static/js/2.87b31938.chunk.js.map",
+    "index.html": "/cardGame/index.html",
+    "static/css/main.18b1357c.chunk.css.map": "/cardGame/static/css/main.18b1357c.chunk.css.map",
+    "static/js/2.87b31938.chunk.js.LICENSE.txt": "/cardGame/static/js/2.87b31938.chunk.js.LICENSE.txt",
+    "static/media/styles.module.css": "/cardGame/static/media/cardsBackground.1ee1be8d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.90b16801.js",
+    "static/js/runtime-main.660849cf.js",
     "static/js/2.87b31938.chunk.js",
-    "static/css/main.8189e5d2.chunk.css",
+    "static/css/main.18b1357c.chunk.css",
     "static/js/main.6c78c608.chunk.js"
   ]
 }
